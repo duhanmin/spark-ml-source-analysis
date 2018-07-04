@@ -10,8 +10,6 @@ $$arg min_{\beta} \sum_{i=1}^{n}|y_{i} - f_{i}(\beta)|^{p}$$
 
 $$\beta ^{t+1} = argmin_{\beta} \sum_{i=1}^{n} w_{i}(\beta^{(t)}))|y_{i} - f_{i}(\beta)|^{2} = (X^{T}W^{(t)}X)^{-1}X^{T}W^{(t)}y$$
 
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> $$arg min_{\beta} \sum_{i=1}^{n}|y_{i} - f_{i}(\beta)|^{p}$$</script>
-
 &emsp;&emsp;在这个公式中，$W^{(t)}$是权重对角矩阵，它的所有元素都初始化为1。每次迭代中，通过下面的公式更新。
 
 $$W_{i}^{(t)} = |y_{i} - X_{i}\beta^{(t)}|^{p-2}$$
